@@ -5,6 +5,6 @@
 // par production mein API key ko backend/proxy se use karna best hota hai.
 // ====================================================================
 window.HINDIDIWAS_CONFIG = {
-  GEMINI_API_KEY: "AIzaSyCbJOXTW8ybT4loSG3eYb1HM1xhjkm5NQc",
+  GEMINI_API_KEY: "AQ.Ab8RN6IsBHjFTjjm8Px-lHHV4x4TEPKI7EtEOStwqnZCdl6ZnA",
   GEMINI_MODEL: "gemini-2.5-flash"
 };
