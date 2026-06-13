@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ask (AI) | Hindi Diwas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a href="index.html" class="brand"><span class="leaf">🌱</span> Hindi Diwas</a>
+  <nav class="nav-links">
+    <a href="index.html"><span class="lang-en">Home</span><span class="lang-hi">होम</span></a>
+    <a href="ask.html"><span class="lang-en">Ask (AI)</span><span class="lang-hi">पूछें (AI)</span></a>
+    <a href="features.html"><span class="lang-en">Features</span><span class="lang-hi">विशेषताएं</span></a>
+    <a href="about.html"><span class="lang-en">About</span><span class="lang-hi">हमारे बारे में</span></a>
+    <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-hi">संपर्क</span></a>
+    <div class="lang-toggle"><button data-lang="en" onclick="setLang('en')">EN</button><button data-lang="hi" onclick="setLang('hi')">हिंदी</button></div>
+  </nav>
+  <button class="menu-btn">☰</button>
+</div></header>
+
+<section class="section"><div class="container">
+  <div class="section-head"><h2><span class="lang-en">Ask the AI Farming Assistant</span><span class="lang-hi">AI कृषि सहायक से पूछें</span></h2><p><span class="lang-en">Type any farming question in Hindi or English.</span><span class="lang-hi">कोई भी खेती से जुड़ा सवाल हिंदी या अंग्रेजी में लिखें।</span></p></div>
+  <div class="chat-wrap">
+    <div class="chat-top"><span class="dot"></span> <strong>Hindi Diwas AI</strong></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot"><span class="lang-en">Hello! I am your farming assistant. Ask me anything about crops, fertilizer, pests or irrigation.</span><span class="lang-hi">नमस्ते! मैं आपका कृषि सहायक हूं। खेती, फसल या खाद के बारे में कुछ भी पूछें।</span></div>
+    </div>
+    <form class="chat-input" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Type your question... / अपना सवाल लिखें..." autocomplete="off">
+      <button class="btn btn-primary" type="submit">→</button>
+    </form>
+  </div>
+  <div class="suggest">
+    <span class="chip">Which fertilizer is best for wheat?</span>
+    <span class="chip">टमाटर में कीट कैसे रोकें?</span>
+    <span class="chip">धान की सिंचाई कब करें?</span>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><h4>🌱 Hindi Diwas</h4><p class="desc"><span class="lang-en">AI-powered agriculture assistant for farmers across India.</span><span class="lang-hi">किसानों के लिए AI कृषि सहायक।</span></p><div class="social"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="mailto:admin@hindidiwas.website">✉️</a></div></div>
+    <div><h4><span class="lang-en">Pages</span><span class="lang-hi">पेज</span></h4><a href="index.html">Home</a><a href="ask.html">Ask AI</a><a href="features.html">Features</a></div>
+    <div><h4><span class="lang-en">Company</span><span class="lang-hi">कंपनी</span></h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a></div>
+    <div><h4><span class="lang-en">Get in touch</span><span class="lang-hi">संपर्क</span></h4><a href="mailto:admin@hindidiwas.website">admin@hindidiwas.website</a><a href="privacy.html">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Hindi Diwas. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chat.js"></script>
+</body></html>
