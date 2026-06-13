@@ -34,15 +34,19 @@ async function askGemini(prompt){
     return localAnswer(prompt);
   }
   const sys = 'Aap ek madadgar krishi (agriculture) sahayak hain. Bharat ke kisaano ko saral Hindi mein kheti, fasal, mausam, khaad, keet aur sinchai ke baare mein practical salah dein. Jawab chote aur samajhne mein aasan rakhein.';
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`;
+ const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   try{
     const res = await fetch(url,{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        systemInstruction:{parts:[{text:sys}]},
-        contents:[{role:'user',parts:[{text:prompt}]}]
-      })
-    });
+  method:'POST',
+  headers:{
+    'Content-Type':'application/json',
+    'X-goog-api-key': key
+  },
+  body:JSON.stringify({
+    systemInstruction:{parts:[{text:sys}]},
+    contents:[{role:'user',parts:[{text:prompt}]}]
+  })
+});
     const data = await res.json();
     // API returned an error (e.g. quota/credits over, bad key) -> fallback
     if(data.error || !res.ok){
